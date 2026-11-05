@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="BLE Analyzer Pro uygulamasının gizlilik politikası ve veri kullanımı açıklaması."
+    />
+    <meta name="color-scheme" content="dark" />
+    <title>Gizlilik Politikası — BLE Analyzer Pro</title>
+    <style>
+      :root {
+        --background: #080d16;
+        --surface: #111827;
+        --surface-soft: #172033;
+        --border: #25324a;
+        --text: #f8fafc;
+        --muted: #a7b3c7;
+        --primary: #38bdf8;
+        --primary-soft: rgba(56, 189, 248, 0.12);
+        --success: #34d399;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 15% 0%, rgba(2, 132, 199, 0.2), transparent 32rem),
+          var(--background);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .shell {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      .hero,
+      .card {
+        border: 1px solid var(--border);
+        background: rgba(17, 24, 39, 0.9);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+      }
+
+      .hero {
+        padding: clamp(28px, 5vw, 52px);
+        border-radius: 24px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 18px;
+        padding: 7px 11px;
+        border: 1px solid rgba(56, 189, 248, 0.28);
+        border-radius: 999px;
+        background: var(--primary-soft);
+        color: var(--primary);
+        font-size: 0.78rem;
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.22;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.15rem, 6vw, 4.25rem);
+        letter-spacing: -0.045em;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: clamp(1.35rem, 3vw, 1.75rem);
+      }
+
+      h3 {
+        margin: 28px 0 8px;
+        color: #d9e4f3;
+        font-size: 1.05rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      .summary {
+        max-width: 720px;
+        margin: 20px 0 0;
+        font-size: 1.08rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .meta strong,
+      .highlight strong {
+        color: var(--text);
+      }
+
+      .highlight {
+        margin-top: 24px;
+        padding: 17px 18px;
+        border-left: 3px solid var(--success);
+        border-radius: 10px;
+        background: rgba(52, 211, 153, 0.08);
+        color: #c7f9e6;
+      }
+
+      .language-nav {
+        display: flex;
+        gap: 10px;
+        margin: 22px 0;
+      }
+
+      .language-nav a {
+        padding: 9px 13px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--surface);
+        text-decoration: none;
+        font-weight: 650;
+      }
+
+      .card {
+        margin-top: 18px;
+        padding: clamp(22px, 4vw, 38px);
+        border-radius: 18px;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .divider {
+        height: 1px;
+        margin: 52px 0 10px;
+        background: linear-gradient(90deg, transparent, var(--border), transparent);
+      }
+
+      footer {
+        padding-top: 34px;
+        text-align: center;
+        color: #718096;
+        font-size: 0.86rem;
+      }
+
+      @media (max-width: 560px) {
+        .shell {
+          width: min(100% - 20px, 920px);
+          padding-top: 18px;
+        }
+
+        .hero,
+        .card {
+          border-radius: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">LertaTech · Privacy</p>
+        <h1>BLE Analyzer Pro</h1>
+        <p class="summary">
+          Bu politika, BLE Analyzer Pro'nun yakındaki Bluetooth Low Energy
+          cihazlarını tararken, bağlanırken ve telemetri verilerini işlerken
+          gizliliğinizi nasıl koruduğunu açıklar.
+        </p>
+        <div class="meta">
+          <span><strong>Yürürlük tarihi:</strong> 6 Kasım 2026</span>
+          <span><strong>Paket:</strong> com.lertatech.bleprotocolanalyzer</span>
+        </div>
+        <div class="highlight">
+          <strong>Kısa özet:</strong> Uygulama hesap oluşturmaz; reklam veya
+          analiz SDK'sı kullanmaz; BLE tarama ve telemetri verilerini bir
+          geliştirici sunucusuna göndermez.
+        </div>
+      </header>
+
+      <nav class="language-nav" aria-label="Dil seçimi">
+        <a href="#turkce">Türkçe</a>
+        <a href="#english" lang="en">English</a>
+      </nav>
+
+      <section id="turkce" aria-labelledby="tr-title">
+        <article class="card">
+          <h2 id="tr-title">Gizlilik Politikası</h2>
+          <p>
+            BLE Analyzer Pro ("Uygulama"), LertaTech tarafından sunulan bir
+            Bluetooth Low Energy analiz aracıdır. Bu politika yalnızca
+            Uygulama için geçerlidir.
+          </p>
+
+          <h3>1. İşlenen bilgiler</h3>
+          <p>
+            Uygulama, temel işlevlerini sağlamak için aşağıdaki bilgileri
+            cihazınızda yerel olarak işler:
+          </p>
+          <ul>
+            <li>
+              Yakındaki BLE cihazlarının yayınladığı ad, cihaz tanımlayıcısı,
+              sinyal gücü ve servis/karakteristik UUID bilgileri.
+            </li>
+            <li>
+              Bağlandığınız BLE cihazından gelen ham bildirim paketleri ve
+              ayrıştırılmış telemetri değerleri.
+            </li>
+            <li>
+              Bağlantı durumu, paket sayıları ve uygulama içinde oluşturulan
+              geçici terminal kayıtları.
+            </li>
+          </ul>
+          <p>
+            Bu bilgiler bir LertaTech sunucusuna aktarılmaz. Uygulamada hesap,
+            reklam, davranışsal analiz veya kullanıcı izleme özelliği yoktur.
+          </p>
+
+          <h3>2. İzinler</h3>
+          <ul>
+            <li>
+              <strong>Yakındaki cihazlar / Bluetooth:</strong> BLE cihazlarını
+              bulmak, bunlara bağlanmak ve veri alışverişi yapmak için
+              gereklidir.
+            </li>
+            <li>
+              <strong>Konum (uyumlu eski Android sürümleri):</strong> Android'in
+              BLE taraması için teknik olarak zorunlu tuttuğu sürümlerde
+              istenir. Uygulama GPS konumunuzu okumaz, kaydetmez veya paylaşmaz.
+            </li>
+          </ul>
+          <p>
+            İzinleri işletim sistemi ayarlarından geri alabilirsiniz. Gerekli
+            izinlerin kapatılması BLE tarama veya bağlantı özelliklerini
+            sınırlandırabilir.
+          </p>
+
+          <h3>3. Saklama, dışa aktarma ve paylaşım</h3>
+          <p>
+            BLE verileri çalışma sırasında cihaz belleğinde tutulur ve
+            uygulamadaki sıfırlama işleviyle temizlenebilir. Uygulama kapandığında
+            geçici oturum verileri kalıcı olarak saklanmaz. XML dışa aktarma
+            işlemi yalnızca sizin açık eyleminizle başlar; ardından dosyanın
+            hangi uygulama veya kişiyle paylaşılacağını işletim sisteminin
+            paylaşım ekranında siz seçersiniz. Dışa aktarılan dosyaların
+            korunması ve silinmesi sizin kontrolünüzdedir.
+          </p>
+
+          <h3>4. Üçüncü taraf hizmetleri</h3>
+          <p>
+            Uygulama; Bluetooth erişimi, dosya oluşturma ve sistem paylaşım
+            ekranı gibi işlevler için Flutter eklentileri ile Android/iOS işletim
+            sistemi hizmetlerini kullanır. Uygulama kendi adına reklam veya
+            analiz hizmetlerine veri göndermez. Gizlilik politikasını açmanız,
+            cihazınızın varsayılan tarayıcısında GitHub Pages sayfasına erişim
+            oluşturur; bu erişim GitHub'ın kendi gizlilik koşullarına tabidir.
+          </p>
+
+          <h3>5. Çocukların gizliliği</h3>
+          <p>
+            Uygulama çocuklara yönelik değildir ve bilerek çocuklardan kişisel
+            bilgi toplamaz. Kişisel bilgi işlendiğini düşünüyorsanız bizimle
+            iletişime geçebilirsiniz.
+          </p>
+
+          <h3>6. Güvenlik ve değişiklikler</h3>
+          <p>
+            Verilerin cihazda kalmasını sağlayarak aktarım riskini en aza
+            indiririz. Bununla birlikte hiçbir cihaz veya aktarım yöntemi mutlak
+            güvenlik garanti edemez. Uygulamanın işlevleri ya da yasal
+            gereklilikler değişirse bu politika güncellenebilir. Güncel sürüm bu
+            sayfada ve yeni yürürlük tarihiyle yayımlanır.
+          </p>
+
+          <h3>7. İletişim</h3>
+          <p>
+            Gizlilikle ilgili soru veya talepleriniz için
+            <a href="https://github.com/Yusuf-Goksu/ble_protocol_analyzer/issues"
+              >GitHub üzerinden destek talebi</a
+            >
+            oluşturabilirsiniz. Talebinize hassas kişisel bilgi eklemeyin.
+          </p>
+        </article>
+      </section>
+
+      <div class="divider" role="presentation"></div>
+
+      <section id="english" lang="en" aria-labelledby="en-title">
+        <article class="card">
+          <h2 id="en-title">Privacy Policy</h2>
+          <p>
+            BLE Analyzer Pro (the “App”) is a Bluetooth Low Energy analysis
+            tool provided by LertaTech. This policy applies only to the App.
+          </p>
+
+          <h3>1. Information processed</h3>
+          <p>The App locally processes the following information:</p>
+          <ul>
+            <li>
+              Names, device identifiers, signal strength, and service or
+              characteristic UUIDs broadcast by nearby BLE devices.
+            </li>
+            <li>
+              Raw notification packets and parsed telemetry received from a BLE
+              device you choose to connect to.
+            </li>
+            <li>
+              Connection status, packet counts, and temporary terminal logs
+              created inside the App.
+            </li>
+          </ul>
+          <p>
+            This information is not transmitted to a LertaTech server. The App
+            has no accounts, advertising, behavioral analytics, or user
+            tracking.
+          </p>
+
+          <h3>2. Permissions</h3>
+          <ul>
+            <li>
+              <strong>Nearby devices / Bluetooth:</strong> required to discover,
+              connect to, and exchange data with BLE devices.
+            </li>
+            <li>
+              <strong>Location on compatible older Android versions:</strong>
+              requested where Android technically requires it for BLE scanning.
+              The App does not read, store, or share your GPS location.
+            </li>
+          </ul>
+          <p>
+            You may revoke permissions in system settings. Disabling a required
+            permission may limit BLE scanning or connection features.
+          </p>
+
+          <h3>3. Retention, export, and sharing</h3>
+          <p>
+            BLE data is held in device memory during use and can be cleared with
+            the App's reset function. Temporary session data is not persistently
+            stored when the App closes. XML export starts only when you request
+            it. You then select the destination in the operating system's share
+            sheet. You control the protection and deletion of exported files.
+          </p>
+
+          <h3>4. Third-party services</h3>
+          <p>
+            The App uses Flutter plugins and Android/iOS system services for
+            functions such as Bluetooth access, file creation, and the system
+            share sheet. It does not send data to advertising or analytics
+            services on its own behalf. Opening this privacy policy accesses a
+            GitHub Pages site in your default browser and is subject to GitHub's
+            own privacy terms.
+          </p>
+
+          <h3>5. Children's privacy</h3>
+          <p>
+            The App is not directed to children and does not knowingly collect
+            personal information from children. Contact us if you believe such
+            information has been processed.
+          </p>
+
+          <h3>6. Security and policy updates</h3>
+          <p>
+            Keeping data on the device reduces transmission risk, but no device
+            or transfer method can be guaranteed absolutely secure. We may
+            update this policy when App functionality or legal requirements
+            change. The current version will be published on this page with a
+            revised effective date.
+          </p>
+
+          <h3>7. Contact</h3>
+          <p>
+            For privacy questions or requests, open a
+            <a href="https://github.com/Yusuf-Goksu/ble_protocol_analyzer/issues"
+              >support request on GitHub</a
+            >. Do not include sensitive personal information in a public issue.
+          </p>
+        </article>
+      </section>
+
+      <footer>© 2026 LertaTech · BLE Analyzer Pro</footer>
+    </main>
+  </body>
+</html>
